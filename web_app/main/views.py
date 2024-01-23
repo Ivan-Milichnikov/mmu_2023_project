@@ -8,8 +8,8 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
-def switch(request):
-    return render(request, 'main/switch.html')
+def switch(request, sost):
+    return HttpResponse(f"<h1>Состояние переключателя: {sost}</h1>")
 
 
 
